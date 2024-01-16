@@ -9,14 +9,18 @@ import BentoItem from "./BentoItem.astro";
     mx-auto p-6 md:p-12 lg:p-20
   `}
 >
-<!-- <div class="absolute top-0 bottom-0 h-full w-full z-10">
+  <!-- <div class="absolute top-0 bottom-0 h-full w-full z-10">
   <img class="h-full w-full object-cover object-center" src="/public/contacto.png" alt="background"> -->
- 
-  <BentoItem class="col-span-10 lg:col-span-4" title="SU ESTRATEGIA FINANCIERA">
+
+  <BentoItem
+    class="col-span-10 lg:col-span-4"
+    title="SU ESTRATEGIA FINANCIERA"
+    subtitle="Somos su mejor opción"
+  >
     <div
       slot="image"
       class="transition-scale absolute bottom-0 left-0 top-0
-        -z-10 h-full w-full bg-green-300
+        -z-10 h-full w-full bg-blue-300
         bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
       style="background-image: url('/agroclick/ser_financiero.png')"
     >
@@ -33,17 +37,17 @@ import BentoItem from "./BentoItem.astro";
   <BentoItem
     class="col-span-10 lg:col-span-6"
     title="SU GESTIÓN DE MERCADO"
-    subtitle="buenos dias 2"
+    subtitle="Confie en nosotros"
   >
     <div
       slot="image"
       class="transition-scale absolute bottom-0 left-0 top-0
-    -z-10 h-full w-full bg-red-800
+    -z-10 h-full w-full bg-zinc-800
     bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
       style="background-image: url('/agroclick/ser_mercadeo.png')"
     >
     </div>
-    <p slot="content" class="max-w-xl text-base text-white  md:text-lg">
+    <p slot="content" class="max-w-xl text-base text-white md:text-lg">
       SU GESTIÓN DE MERCADOAgroclick facilita el contacto entre agronegocios y
       fondos especializados en agricultura. Le apoya en la preparación de
       información para la gestión de fondos de capital de trabajo o inversiones
@@ -55,39 +59,42 @@ import BentoItem from "./BentoItem.astro";
   <BentoItem
     class="col-span-10 lg:col-span-6"
     title="SU MANEJO DE RIESGO"
-    subtitle="buenos dias 3"
+    subtitle="Evitamos riesgos innecesarios"
   >
     <div
       slot="image"
       class="transition-scale absolute bottom-0 left-0 top-0
-        -z-10 h-full w-full bg-violet-800
+        -z-10 h-full w-full bg-red-500
         bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
       style="background-image: url('/agroclick/ser_riesgo.png')"
     >
     </div>
-    <p slot="content" class="max-w-xl text-base text-white  md:text-lg">
+    <p slot="content" class="max-w-xl text-base text-white md:text-lg">
       Agroclick brinda servicios de asesoría en el manejo de riesgo de precios
       en café. El objetivo de Agroclick es ayudar a gestionar y minimizar el
       riesgo de fluctuaciones en los precios del mercado, lo que les permitirá
       tener una mayor estabilidad financiera y una mejor planificación.
     </p>
   </BentoItem>
-  <BentoItem class="col-span-10 lg:col-span-4" title="SU AUDITOR">
+  <BentoItem
+    class="col-span-10 lg:col-span-4"
+    title="SU AUDITOR"
+    subtitle="No pierda control de su negocio"
+  >
     <div
       slot="image"
       class="transition-scale absolute bottom-0 left-0 top-0
-        -z-10 h-full w-full bg-fuchsia-600
+        -z-10 h-full w-full bg-amber-400
         bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
       style="background-image: url('/agroclick/ser_auditoria.png')"
     >
     </div>
-    <p slot="content" class="max-w-xl text-base text-white  md:text-lg">
+    <p slot="content" class="max-w-xl text-base text-white md:text-lg">
       Agroclick hace auditorías de segunda y tercera parte para verificación de
       normas sostenibles para verificación de normas sostenibles y de sistemas
       de gestión (Agricultura Sostenible) así como auditorías financieras; para
       fortalecer la gestión y rendición de cuentas del giro del negocio.
     </p>
   </BentoItem>
-<!-- </div> -->
-
+  <!-- </div> -->
 </section>

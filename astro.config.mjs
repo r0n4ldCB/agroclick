@@ -7,5 +7,5 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [tailwind(), react()],
   site: 'https://r0n4ldcb.github.io',
-  base: '/mi-repo',
+  //base: '/mi-repo',
 });

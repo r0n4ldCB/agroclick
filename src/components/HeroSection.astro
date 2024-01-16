@@ -1,0 +1,28 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section
+  tittle="¿Quienes Somos?"
+  subtittle="AgroClick también actúa como catalítico para la movilización de recursos humanos, financieros y comerciales disponibles en el mercado agrícola"
+  color="white"
+>
+  <div slot="footer">
+    <a
+      class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+      href="asesorias_agroclick">Leer más</a
+    >
+    <a
+      class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
+      href="contacto"
+    >
+      Contactenos</a
+    >
+  </div>
+  <img
+    slot="background"
+    class="object-center object-cover h-full w-full"
+    src="/1low.jpg"
+  >
+  </img>
+</Section>

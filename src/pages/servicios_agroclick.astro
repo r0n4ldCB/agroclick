@@ -1,0 +1,23 @@
+---
+import Auditoria from "../components/Auditoria.astro";
+import Financiero from "../components/Financiero.astro";
+import Historia from "../components/Historia.astro";
+import Mercadeo from "../components/Mercadeo.astro";
+import Riesgo from "../components/Riesgo.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Servicios Agroclick">
+    <div class="snap-center">
+        <Financiero />
+      </div>
+      <div class="snap-center">
+        <Auditoria/>
+      </div>
+      <div class="snap-center">
+        <Mercadeo/>
+      </div>
+      <div class="snap-center">
+        <Riesgo/>
+      </div>
+</Layout>

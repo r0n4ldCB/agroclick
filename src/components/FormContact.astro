@@ -1,0 +1,47 @@
+---
+import Formulario from "./Formulario";
+import Section from "./Section.astro"
+---
+
+<Section
+  title="Contacto"
+  subtitle=""
+  color="white"
+  id="contacto"
+  showFooterContent="true"
+>
+  <div slot="contenido" class="gap-x-6 flex mx-auto justify-center">
+    <Formulario client:load/>
+  </div>
+
+  <img
+    slot="background"
+    alt="Accesorios"
+    class="h-full w-full object-cover object-center"
+    src="/contacto.png"
+    id="bg-image-accessories"
+  />
+</Section>
+
+<script>
+  function isEdge() {
+    if (
+      navigator.userAgent.indexOf("Edge") > -1 ||
+      navigator.userAgent.indexOf("Edg") > -1
+    ) {
+      return true
+    } else {
+      return false
+    }
+  }
+
+  let imageElement = document.querySelector(
+    "#bg-image-accessories"
+  ) as HTMLImageElement
+
+  if (isEdge()) {
+    imageElement.src = "/contacto.png"
+  } else {
+    imageElement.src = "/contacto.png"
+  }
+</script>

@@ -1,0 +1,32 @@
+---
+const { color, tittle, id, subtittle, showFooterContent } = Astro.props;
+const textColor = `text-${color}`;
+import FooterMenu from "./FooterMenu.astro";
+---
+
+<section
+  class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative"
+  data-header-color={color}
+  id={id}
+>
+  <div class="z-30 relative h-full flex flex-col">
+    <header>
+      <div class="items-center justify-center px-10 py-10">
+        <h2 class={`${textColor} pt-20 text-[40px] font-medium`}>
+          {tittle}
+        </h2>
+        <p class={`${textColor} text-2xl rounded bg-zinc-900/70`}>
+          {subtittle}
+        </p>
+      </div>
+    </header>
+    <body>
+      <div class="grid grid-flow-row-dense grid-cols-2 p-4 pr-7">
+        <slot name="contenido" />
+      </div>
+    </body>
+  </div>
+  <div class="absolute top-0 bottom-0 h-full w-full z-10">
+    <slot name="background" />
+  </div>
+</section>

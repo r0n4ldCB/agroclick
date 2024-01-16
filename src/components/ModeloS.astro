@@ -1,0 +1,57 @@
+---
+import Section from "./Section.astro";
+import Card from "./Card.astro";
+---
+
+<Section
+  title="Model S"
+  subtitle="Programe una consulta virtual"
+  color="black"
+  id="model-s"
+  showFooterContent="true"
+>
+  <div slot="footer" class="gap-x-6 flex mx-auto">
+    <a
+      class="border-[3px] border-gray-600 bg-gray-600 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500"
+      href="#"
+    >
+      Componente del modelo S</a
+    >
+    <a
+      class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
+      href="#"
+    >
+      Saber más</a
+    >
+    <Card title="Prueba card" body="seccion de modelo S" href="#" />
+  </div>
+
+  <img
+    slot="background"
+    alt="Model S"
+    class="h-full w-full object-cover object-center"
+    src="/modelo-s.webp"
+    id="bg-image-models"
+  />
+</Section>
+
+<script>
+  function isEdge() {
+    if (
+      navigator.userAgent.indexOf("Edge") > -1 ||
+      navigator.userAgent.indexOf("Edg") > -1
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  let imageElement = document.querySelector("#bg-image-models") as HTMLImageElement; // TypeScript
+
+  if (isEdge()) {
+    imageElement.src = "/modelo-s.webp";
+  } else {
+    imageElement.src = "/modelo-s.avif";
+  }
+</script>

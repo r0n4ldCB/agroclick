@@ -30,7 +30,7 @@ import Card from "./Card.astro";
     slot="background"
     alt="Model S"
     class="h-full w-full object-cover object-center"
-    src="/modelo-s.webp"
+    src="/agroclick/modelo-s.webp"
     id="bg-image-models"
   />
 </Section>
@@ -50,8 +50,8 @@ import Card from "./Card.astro";
   let imageElement = document.querySelector("#bg-image-models") as HTMLImageElement; // TypeScript
 
   if (isEdge()) {
-    imageElement.src = "/modelo-s.webp";
+    imageElement.src = "/agroclick/modelo-s.webp";
   } else {
-    imageElement.src = "/modelo-s.avif";
+    imageElement.src = "/agroclick/modelo-s.avif";
   }
 </script>
